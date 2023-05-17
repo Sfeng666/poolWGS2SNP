@@ -38,7 +38,7 @@ bash Miniconda3.sh
 * (optional) a full report on the number and proportion of remaining reads after each step of quality control and filtering, as well as the depth and coverage of clean mapped reads;
 
 ## Workflow diagram
-![Workflow diagram](docs/fig S11 SNP calling pipeline_modified.jpg)
+![Workflow diagram](docs/pipeline.jpg)
 
 The analysis pipeline to call SNPs from pool-seq raw reads. Grey shadings and bold texts represent the three major parts of this pipeline. Input and output are indicated by elliptical boxes. Required steps are indicated by rectangular boxes and arrows in solid lines. Optional steps are indicated by dashed boxes and arrows. Names and versions of used software are colored in blue
 

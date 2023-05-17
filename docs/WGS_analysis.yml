@@ -1,0 +1,17 @@
+name: WGS_analysis
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - gatk=3.8
+  - snpeff
+  - fastp
+  - picard
+  - cutadapt
+  - fastqc
+  - bwa
+  - parallel
+  - samtools=1.9
+  - vcftools
+prefix: /home/sfeng77/anaconda3/envs/WGS_analysis

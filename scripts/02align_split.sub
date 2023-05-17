@@ -1,0 +1,27 @@
+# submit split job nodes for alignment (Alignment + add read group tags + filter low quality alighments)
+
+### this is a single job that uses HTCondor File Transfer (Small Input and Output File Transfer)
+# Files for the below lines MUST all be somewhere within /home/username,
+# and not within /staging/username
+
+initialdir = $(outdir_condor)
+executable = $(dir_scripts)/02align_split.sh
+arguments = "$(sample) $(read1) $(read2) $(genome) $(job) $(bwa_index_squid) $(conda_pack_align_squid)"
+log = $(job).log
+output = $(job).out
+error = $(job).err
+when_to_transfer_output = ON_EXIT_OR_EVICT
+
+## List small input files. Do NOT list the large data files here
+# when some input files are > 100MB but not job-specific (such as software, genome index),
+# it's better to put them on SQUID
+transfer_input_files = $(read1), $(read2), $(conda_pack_align_squid), $(bwa_index_squid)
+should_transfer_files = YES
+
+# Make sure to still include lines like "request_memory", "request_disk", "request_cpus", etc. 
++WantFlocking = false
++WantGlideIn = false
+request_cpus = $(request_cpus)
+request_disk = $(request_disk)
+request_memory = $(request_memory)
+queue

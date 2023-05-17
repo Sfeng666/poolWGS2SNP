@@ -1,6 +1,6 @@
 # poolWGS2SNP: a high-performance workflow to identify SNPs from pool-seq data
 ----
-The bioinformatic workflow to call SNPs from Fastq files of raw pool-sequenced pair-end DNA reads. Please check out our corresponding paper:
+The bioinformatic workflow to call SNPs from Fastq files of raw pool-sequenced pair-end DNA reads.
 
 ## Features
 * Built and optimized for pool-sequenced data.

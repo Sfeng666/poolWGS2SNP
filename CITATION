@@ -1,0 +1,13 @@
+To reference poolWGS2SNP in publications, please cite:
+
+@article {Feng2023.07.03.547576,
+        author = {Siyuan Feng and Samuel P. DeGrey and Christelle Gu{\'e}dot and Sean D. Schoville and John E. Pool},
+        title = {Genomic Diversity Illuminates the Species History and Environmental Adaptation of Drosophila suzukii},
+        elocation-id = {2023.07.03.547576},
+        year = {2023},
+        doi = {10.1101/2023.07.03.547576},
+        publisher = {Cold Spring Harbor Laboratory},
+        URL = {https://www.biorxiv.org/content/early/2023/07/03/2023.07.03.547576},
+        eprint = {https://www.biorxiv.org/content/early/2023/07/03/2023.07.03.547576.full.pdf},
+        journal = {bioRxiv}
+}
